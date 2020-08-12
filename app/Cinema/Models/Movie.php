@@ -15,7 +15,7 @@ class Movie extends Model
         'name', 'publication_date', 'path'
     ];
 
-    public function movies()
+    public function turns()
     {
         return $this->belongsToMany('App\Cinema\Models\Turn')->withTimestamps();
     }

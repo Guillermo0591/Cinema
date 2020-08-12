@@ -16,7 +16,7 @@ class CreateMovieTurnTable extends Migration
         Schema::create('movie_turn', function (Blueprint $table) {
             $table->id();
             $table->foreignId('movie_id')->references('id')->on('movies')->onDelete('cascade');
-            $table->foreignId('turn_id')->references('id')->on('turns')->onDelete('cascade');
+            $table->foreignId('turn_id')->references('id')->on('movies')->onDelete('cascade');
             $table->timestamps();
         });
     }
