@@ -18,6 +18,11 @@
 docker-compose up -d
 ```
 
+- Create .env from .env-docker
+```
+docker-compose exec app cp .env-docker .env
+```
+
 - Run migrations for Laravel
 ```
 docker-compose exec app php artisan migrate
