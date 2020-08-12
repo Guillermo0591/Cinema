@@ -26,3 +26,10 @@ Route::group([
     Route::post('refresh', 'JWTAuthController@refresh');
 
 });
+
+Route::group([
+    'middleware' => 'api',
+    'prefix' => 'movie'
+], function ($router) {
+    Route::get('index', 'MovieController@index');
+});

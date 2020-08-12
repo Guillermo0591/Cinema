@@ -5,7 +5,7 @@
 - Docker
 - Docker compose
 
-## Stack tecnológico
+## Technological Stack 
 | Name |	Version |
 | --------|------------- |
 | Language | PHP	7.2 |
