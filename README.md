@@ -28,7 +28,7 @@ docker-compose exec app php artisan migrate
 docker-compose exec app php artisan db:seed
 ```
 
-- Generate secret key form jwt
+- Generate secret key for jwt
 ```
 docker-compose exec app php artisan jwt:secret
 ```
